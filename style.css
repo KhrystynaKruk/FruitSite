@@ -295,7 +295,7 @@ nav .fa-solid {
     nav .fa-solid {
         display: block;
         font-size: 25px;
-        color: white;
+        color: rgb(72, 72, 72);
     }
     nav .fa-solid.fa-bars {
         position: absolute;
@@ -303,7 +303,7 @@ nav .fa-solid {
         right: 50px;
     }
     nav ul {
-        background: #4f4e4e;
+        background: #ffffff;
         position: fixed;
         top: 0;
         right: 0px;
@@ -313,6 +313,9 @@ nav .fa-solid {
         z-index: 2;
         transition: right 0.5s;
     }
+    nav ul {
+        padding-top: 50px;
+    }
     nav ul li {
         display: flex;
         flex-direction: column;
@@ -320,9 +323,11 @@ nav .fa-solid {
     }
     nav ul li a {
         font-size: 15px;
+        color: #333;
     }
     nav ul li a:hover {
-        color: #3c3b3b;
+        font-weight: bold;
+        color: #151515;
     }
     nav ul .fa-solid {
         position: absolute;
@@ -330,8 +335,10 @@ nav .fa-solid {
         left: 25px;
         cursor: pointer;
     }
+    nav .fa-solid.fa-bars {
+        color: #fff
+    }
     /*text*/
-    .content .textBox {}
     .content .textBox h2 {
         text-shadow: rgb(90, 90, 90) 1px 0 15px;
         font-size: 35px;
