@@ -30,7 +30,8 @@ section {
     background-color: #fc4a55;
 }
 
-.bg::before {
+
+/* .bg::before {
     content: '';
     position: absolute;
     top: 0;
@@ -38,7 +39,7 @@ section {
     width: 80%;
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
-}
+} */
 
 header {
     position: absolute;
@@ -92,13 +93,13 @@ header .navigation li a:hover {
     font-family: var(--thisfont);
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .content .textBox {
     position: relative;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .content .textBox h2 {
@@ -202,3 +203,30 @@ header .navigation li a:hover {
 
 
 /*media*/
+
+
+/************************************************/
+
+
+/* about */
+
+.tab-links.active-link::after {
+    width: 80%;
+}
+
+.tab-contents {
+    display: flex;
+    list-style: none;
+}
+
+.imgBox {
+    list-style: none;
+}
+
+.tab-contents {
+    display: none
+}
+
+.tab-contents.active-tab {
+    display: flex;
+}
