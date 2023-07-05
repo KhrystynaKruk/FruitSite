@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Site</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8c0c59b4b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <section>
-        <div class="bg"></div>
 
-        <header>
+
+        <nav>
             <a href="#" class="logo">Fruits</a>
-            <ul class="navigation">
-                <li><a href="#" class="active">Home</a></li>
+            <ul class="sidemenu">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's new</a></li>
                 <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
-        </header>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
         <div class="content">
             <div class="tab-contents active-tab" id="apple">
                 <div class="textBox">
@@ -90,18 +94,18 @@
             </div>
         </div>
         <ul class="thumb tab-titles">
-            <li class="tab-links active-link" onclick="opentab('apple')" id="btn"><img src="img/apple.png" alt=""></li>
+            <li class="tab-links active-link" onclick="opentab('apple')" id="btn_01"><img src="img/apple.png" alt=""></li>
 
-            <li class="tab-links" onclick="opentab('mango')" id="btn">
+            <li class="tab-links" onclick="opentab('mango')" id="btn_02">
                 <img src="img/mango.png" alt=""></li>
 
-            <li class="tab-links" onclick="opentab('watermelon')" id="btn">
+            <li class="tab-links" onclick="opentab('watermelon')" id="btn_03">
                 <img src="img/watermelon.png" alt=""></li>
 
-            <li class="tab-links" onclick="opentab('dragonfruit')" id="btn">
+            <li class="tab-links" onclick="opentab('dragonfruit')" id="btn_04">
                 <img src="img/dragonFruits.png" alt=""></li>
 
-            <li class="tab-links" onclick="opentab('pineapple')" id="btn">
+            <li class="tab-links" onclick="opentab('pineapple')" id="btn_05">
                 <img src="img/pineApple.png" alt=""></li>
 
         </ul>
@@ -119,14 +123,47 @@
     </section>
     <!-- change the bg color TO SOLVE-->
     <script>
-        const btn = document.getElementById('btn');
+        const btn_01 = document.getElementById('btn_01');
 
-        btn.addEventListener('click', function onClick(event) {
+        btn_01.addEventListener('click', function onClick(event) {
             // 👇️ change background color
-            document.body.style.backgroundColor = 'black';
+            document.body.style.backgroundColor = '#fc4a55';
 
-            // 👇️ optionally change text color
-            // document.body.style.color = 'white';
+
+        });
+        const btn_02 = document.getElementById('btn_02');
+
+        btn_02.addEventListener('click', function onClick(event) {
+            // 👇️ change background color
+            document.body.style.backgroundColor = 'orange';
+
+
+
+
+        });
+        const btn_03 = document.getElementById('btn_03');
+
+        btn_03.addEventListener('click', function onClick(event) {
+            // 👇️ change background color
+            document.body.style.backgroundColor = '#228B22';
+
+
+        });
+        const btn_04 = document.getElementById('btn_04');
+
+        btn_04.addEventListener('click', function onClick(event) {
+            // 👇️ change background color
+            document.body.style.backgroundColor = '#c83a60';
+
+
+        });
+        const btn_05 = document.getElementById('btn_05');
+
+        btn_05.addEventListener('click', function onClick(event) {
+            // 👇️ change background color
+            document.body.style.backgroundColor = '#4B92DB';
+
+
         });
     </script>
     <script>
@@ -143,6 +180,18 @@
             }
             event.currentTarget.classList.add("active-link")
             document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementsByClassName("sidemenu");
+
+        function openmenu() {
+            sidemenu[0].style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu[0].style.right = "-200px";
         }
     </script>
     <!-- <script>
