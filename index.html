@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="bg"></div>
+
+        <header>
+            <a href="#" class="logo">Fruits</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Eat Fresh Everyday</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur consectetur ea quisquam optio modi repellat cumque dolores veritatis ab magni sit nostrum illum assumenda soluta officiis veniam provident. Aut deleniti sed qui repudiandae
+                    pariatur dolore distinctio nesciunt eligendi perspiciatis sint, officiis vel quos temporibus eos corporis! Nobis, rem reiciendis.</p>
+                <a href="#">LEARN MORE</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="img/apple.png" alt="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li data-text="Apple"><img src="img/apple.png" alt=""></li>
+
+            <li data-text="Mango"><img src="img/mango.png" alt=""></li>
+
+            <li data-text="Watermelon"><img src="img/watermelon.png" alt=""></li>
+
+            <li data-text="Dragon Fruits"><img src="img/dragonFruits.png" alt=""></li>
+
+            <li data-text="Pineapple"><img src="img/pineApple.png" alt=""></li>
+
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="#"><img src="img/facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/twitter.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        let el = document.querySelectorAll('.thumb li');
+        for (let i = 0; i < el.length; i++) {
+            el[i].onclick = function() {
+                var c = 0;
+                while (c < el.length) {
+                    el[c++].className = 'check';
+
+                }
+                el[i].className = 'check ';
+            }
+        }
+    </script>
+</body>
+
+</html>
