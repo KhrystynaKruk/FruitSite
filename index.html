@@ -1,198 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Site</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c8c0c59b4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8c0c59b4b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <section>
+      <nav>
+        <a href="#" class="logo">Fruits</a>
+        <ul class="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's new</a></li>
+          <li><a href="#">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="content">
+        <div class="tab-contents active-tab" id="apple">
+          <div class="textBox">
+            <h2>Eat Fresh Apple Everyday</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+              pariatur consectetur ea quisquam optio modi repellat cumque
+              dolores Aut deleniti sed qui repudiandae pariatur dolore
+              distinctio nesciunt eligendi perspiciatis sint, officiis vel quos
+              temporibus eos corporis! Nobis, rem reiciendis.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
 
-
-        <nav>
-            <a href="#" class="logo">Fruits</a>
-            <ul class="sidemenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">What's new</a></li>
-                <li><a href="#">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="content">
-            <div class="tab-contents active-tab" id="apple">
-                <div class="textBox">
-                    <h2>Eat Fresh Apple Everyday</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur consectetur ea quisquam optio modi repellat cumque dolores veritatis ab magni sit nostrum illum assumenda soluta officiis veniam provident. Aut deleniti sed qui
-                        repudiandae pariatur dolore distinctio nesciunt eligendi perspiciatis sint, officiis vel quos temporibus eos corporis! Nobis, rem reiciendis.</p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-
-                <div class="imgBox">
-                    <img src="img/apple.png" alt="">
-                </div>
-            </div>
-            <div class="tab-contents" id="mango">
-                <div class="textBox">
-                    <h2>Eat Fresh Mango Everyday</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, pariatur consectetur ea quisquam optio modi repellat cumque dolores veritatis ab magni sit nostrum illum assumenda soluta officiis veniam provident. Aut deleniti sed qui
-                        repudiandae pariatur .</p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-
-                <div class="imgBox">
-                    <img src="img/mango.png" alt="">
-                </div>
-            </div>
-            <div class="tab-contents" id="watermelon">
-                <div class="textBox">
-                    <h2>Eat Fresh Watermelon Everyday</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elitea quisquam optio modi repellat cumque dolores veritatis ab magni sit nostrum illum assumenda soluta officiis veniam provident. Aut deleniti sed qui repudiandae pariatur dolore
-                        distinctio nesciunt eligendi perspiciatis sint, officiis vel quos temporibus eos corporis! Nobis, rem reiciendis.</p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-
-                <div class="imgBox">
-                    <img src="img/watermelon.png" alt="">
-                </div>
-            </div>
-            <div class="tab-contents" id="dragonfruit">
-                <div class="textBox">
-                    <h2>Eat Fresh Dragonfruit Everyday</h2>
-                    <p>Lorem ipsum dolor sit, Nobis, rem reiciendis.</p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-
-                <div class="imgBox">
-                    <img src="img/dragonFruits.png" alt="">
-                </div>
-            </div>
-            <div class="tab-contents" id="pineapple">
-                <div class="textBox">
-                    <h2>Eat Fresh Pineapple Everyday</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit asperiores laborum ea quae dolorem animi unde? Accusamus voluptas officiis doloribus veniam? Odio placeat accusamus blanditiis perspiciatis sint aut fugiat! Impedit commodi
-                        quia mollitia voluptatibus, doloremque eveniet sequi nobis cupiditate quas nihil voluptatem veritatis accusantium animi perspiciatis in asperiores temporibus quaerat nesciunt corporis nostrum, fuga eum vero quasi! Sed, incidunt
-                        dolores.</p>
-                    <a href="#">LEARN MORE</a>
-                </div>
-
-
-                <div class="imgBox">
-                    <img src="img/pineApple.png" alt="">
-                </div>
-            </div>
+          <div class="imgBox">
+            <img src="img/apple.png" alt="" />
+          </div>
         </div>
+        <div class="tab-contents" id="mango">
+          <div class="textBox">
+            <h2>Eat Fresh Mango Everyday</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut,
+              pariatur consectetur ea quisquam optio modi repellat cumque
+              dolores
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="imgBox">
+            <img src="img/mango.png" alt="" />
+          </div>
+        </div>
+        <div class="tab-contents" id="watermelon">
+          <div class="textBox">
+            <h2>Eat Fresh Watermelon Everyday</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elitea
+              quisquam optio modi repellat cumque dolores veritatis ab magni sit
+              nostrum illum assumenda soluta officiis veniam provident. Aut
+              deleniti sed qui repudiandae pariatur dolore distinctio nesciunt
+              eligendi perspiciatis sint, officiis vel quos temporibus eos
+              corporis! Nobis, rem reiciendis.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="imgBox">
+            <img src="img/watermelon.png" alt="" />
+          </div>
+        </div>
+        <div class="tab-contents" id="dragonfruit">
+          <div class="textBox">
+            <h2>Eat Fresh Dragonfruit Everyday</h2>
+            <p>Lorem ipsum dolor sit, Nobis, rem reiciendis.</p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="imgBox">
+            <img src="img/dragonFruits.png" alt="" />
+          </div>
+        </div>
+        <div class="tab-contents" id="pineapple">
+          <div class="textBox">
+            <h2>Eat Fresh Pineapple Everyday</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+              asperiores laborum ea quae dolorem animi unde? Accusamus voluptas
+              officiis doloribus veniam? Odio placeat accusamus blanditiis
+              perspiciatis
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="imgBox">
+            <img src="img/pineApple.png" alt="" />
+          </div>
+        </div>
+        <div class="tab-contents" id="fig">
+          <div class="textBox">
+            <h2>Eat Fresh Fig Everyday</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit
+              asperiores laborum ea quae dolorem animi unde? Accusamus voluptas
+              officiis doloribus veniam?
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+
+          <div class="imgBox">
+            <img src="img/fig.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="tab-titles-container">
         <ul class="thumb tab-titles">
-            <li class="tab-links active-link" onclick="opentab('apple')" id="btn_01"><img src="img/apple.png" alt=""></li>
+          <li
+            class="tab-links active-link"
+            onclick="opentab('apple')"
+            id="btn_01"
+          >
+            <img src="img/apple.png" alt="" />
+          </li>
 
-            <li class="tab-links" onclick="opentab('mango')" id="btn_02">
-                <img src="img/mango.png" alt=""></li>
+          <li class="tab-links" onclick="opentab('mango')" id="btn_02">
+            <img src="img/mango.png" alt="" />
+          </li>
 
-            <li class="tab-links" onclick="opentab('watermelon')" id="btn_03">
-                <img src="img/watermelon.png" alt=""></li>
+          <li class="tab-links" onclick="opentab('watermelon')" id="btn_03">
+            <img src="img/watermelon.png" alt="" />
+          </li>
 
-            <li class="tab-links" onclick="opentab('dragonfruit')" id="btn_04">
-                <img src="img/dragonFruits.png" alt=""></li>
+          <li class="tab-links" onclick="opentab('dragonfruit')" id="btn_04">
+            <img src="img/dragonFruits.png" alt="" />
+          </li>
 
-            <li class="tab-links" onclick="opentab('pineapple')" id="btn_05">
-                <img src="img/pineApple.png" alt=""></li>
-
+          <li class="tab-links" onclick="opentab('pineapple')" id="btn_05">
+            <img src="img/pineApple.png" alt="" />
+          </li>
+          <li class="tab-links" onclick="opentab('fig')" id="btn_06">
+            <img src="img/fig.png" alt="" />
+          </li>
         </ul>
-        <ul class="sci">
-            <li>
-                <a href="#"><img src="img/facebook.png" alt=""></a>
-            </li>
-            <li>
-                <a href="#"><img src="img/instagram.png" alt=""></a>
-            </li>
-            <li>
-                <a href="#"><img src="img/twitter.png" alt=""></a>
-            </li>
-        </ul>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="img/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/instagram.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twitter.png" alt="" /></a>
+        </li>
+      </ul>
     </section>
     <!-- change the bg color TO SOLVE-->
     <script>
-        const btn_01 = document.getElementById('btn_01');
+      const btn_01 = document.getElementById("btn_01");
 
-        btn_01.addEventListener('click', function onClick(event) {
-            // 👇️ change background color
-            document.body.style.backgroundColor = '#fc4a55';
+      btn_01.addEventListener("click", function onClick(event) {
+        // 👇️ change background color
+        document.body.style.backgroundColor = "#fc4a55";
+      });
+      const btn_02 = document.getElementById("btn_02");
 
+      btn_02.addEventListener("click", function onClick(event) {
+        // 👇️ change background color
+        document.body.style.backgroundColor = "orange";
+      });
+      const btn_03 = document.getElementById("btn_03");
 
-        });
-        const btn_02 = document.getElementById('btn_02');
+      btn_03.addEventListener("click", function onClick(event) {
+        // 👇️ change background color
+        document.body.style.backgroundColor = "#228B22";
+      });
+      const btn_04 = document.getElementById("btn_04");
 
-        btn_02.addEventListener('click', function onClick(event) {
-            // 👇️ change background color
-            document.body.style.backgroundColor = 'orange';
+      btn_04.addEventListener("click", function onClick(event) {
+        // 👇️ change background color
+        document.body.style.backgroundColor = "#c83a60";
+      });
+      const btn_05 = document.getElementById("btn_05");
 
+      btn_05.addEventListener("click", function onClick(event) {
+        // 👇️ change background color
+        document.body.style.backgroundColor = "#4B92DB";
+      });
+      const btn_06 = document.getElementById("btn_06");
 
-
-
-        });
-        const btn_03 = document.getElementById('btn_03');
-
-        btn_03.addEventListener('click', function onClick(event) {
-            // 👇️ change background color
-            document.body.style.backgroundColor = '#228B22';
-
-
-        });
-        const btn_04 = document.getElementById('btn_04');
-
-        btn_04.addEventListener('click', function onClick(event) {
-            // 👇️ change background color
-            document.body.style.backgroundColor = '#c83a60';
-
-
-        });
-        const btn_05 = document.getElementById('btn_05');
-
-        btn_05.addEventListener('click', function onClick(event) {
-            // 👇️ change background color
-            document.body.style.backgroundColor = '#4B92DB';
-
-
-        });
+      btn_06.addEventListener("click", function onClick(event) {
+        // 👇️ change background color
+        document.body.style.backgroundColor = "#5E008D";
+      });
     </script>
     <script>
-        const tablinks = document.getElementsByClassName("tab-links");
-        const tabcontents = document.getElementsByClassName("tab-contents");
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link")
-            }
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab")
-
-            }
-            event.currentTarget.classList.add("active-link")
-            document.getElementById(tabname).classList.add("active-tab")
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
     </script>
 
     <script>
-        var sidemenu = document.getElementsByClassName("sidemenu");
+      var sidemenu = document.getElementsByClassName("sidemenu");
 
-        function openmenu() {
-            sidemenu[0].style.right = "0";
-        }
+      function openmenu() {
+        sidemenu[0].style.right = "0";
+      }
 
-        function closemenu() {
-            sidemenu[0].style.right = "-200px";
-        }
+      function closemenu() {
+        sidemenu[0].style.right = "-200px";
+      }
     </script>
     <!-- <script>
         let el = document.querySelectorAll('.thumb li');
@@ -207,6 +240,5 @@
             }
         }
     </script> -->
-</body>
-
+  </body>
 </html>
