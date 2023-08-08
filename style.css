@@ -376,6 +376,7 @@ nav .fa-solid {
   .thumb {
     margin-left: 120px;
     margin-bottom: 47px;
+    left: 55%;
     flex-wrap: wrap;
   }
   .thumb li {
