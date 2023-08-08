@@ -18,7 +18,7 @@ section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  padding: 100px;
+  padding: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +180,7 @@ nav li a:hover {
 
 .content .imgBox {
   position: relative;
-  left: 20px;
+  left: 15px;
   z-index: 1;
   width: 600px;
   display: flex;
@@ -188,7 +188,7 @@ nav li a:hover {
 }
 
 .content .imgBox img {
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .thumb {
@@ -284,11 +284,14 @@ nav .fa-solid {
   nav {
     padding: 10px;
   }
+  section {
+    padding: 50px 50px 70px 0;
+  }
   nav .logo {
     position: relative;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    font-size: 3em;
+    font-size: 1.5em;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
     font-family: "Zen Tokyo Zoo", cursive;
@@ -360,6 +363,32 @@ nav .fa-solid {
   }
   .content .imgBox img {
     max-width: 600px;
-    filter: blur(3px) opacity(80%);
+    filter: blur(4px) opacity(80%);
+  }
+  .content .textBox a {
+    font-size: 15px;
+    padding: 3px 5px;
+  }
+  .content .textBox p {
+    margin: 0;
+  }
+
+  .thumb {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+  }
+  .thumb li {
+    margin: 6px 10px;
+  }
+  .sci {
+    top: 89%;
+    right: 120px;
+    flex-direction: row;
+  }
+
+  .sci li img {
+    width: 30px;
+    height: 30px;
   }
 }
