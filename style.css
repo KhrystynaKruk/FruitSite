@@ -285,7 +285,7 @@ nav .fa-solid {
     padding: 10px;
   }
   section {
-    padding: 50px 50px 70px 0;
+    padding: 50px 20px 0px 0;
   }
   nav .logo {
     position: relative;
@@ -374,8 +374,8 @@ nav .fa-solid {
   }
 
   .thumb {
-    margin-left: 100px;
-    margin-bottom: 100px;
+    margin-left: 120px;
+    margin-bottom: 47px;
     flex-wrap: wrap;
   }
   .thumb li {
