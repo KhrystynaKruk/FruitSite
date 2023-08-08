@@ -133,6 +133,8 @@ nav li a:hover {
 .content {
   position: relative;
   font-family: var(--thisfont);
+  margin-left: 50px;
+  font-size: 20px;
   width: 100%;
   display: flex;
   /* justify-content: center;
@@ -141,9 +143,7 @@ nav li a:hover {
 
 .content .textBox {
   position: relative;
-  right: 5em;
-
-  max-width: 30em;
+  max-width: 1000px;
 }
 
 .content .textBox h2 {
@@ -155,7 +155,7 @@ nav li a:hover {
 
 .content .textBox p {
   color: white;
-  margin-top: 20px;
+  margin: 20px 20px 20px 0;
 }
 
 .content .textBox a {
@@ -180,6 +180,7 @@ nav li a:hover {
 
 .content .imgBox {
   position: relative;
+  left: 20px;
   z-index: 1;
   width: 600px;
   display: flex;
@@ -187,7 +188,7 @@ nav li a:hover {
 }
 
 .content .imgBox img {
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .thumb {
@@ -230,7 +231,7 @@ nav li a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 5px;
+  right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,7 +338,6 @@ nav .fa-solid {
   }
   nav .fa-solid.fa-bars {
     color: #fff;
-    right: 10px;
   }
   /*text*/
   .content .textBox h2 {
@@ -362,33 +362,4 @@ nav .fa-solid {
     max-width: 600px;
     filter: blur(3px) opacity(80%);
   }
-}
-
-/* scrolling for boxes */
-/* .scrollmenu {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
-  display: flex;
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-}
-.scrollmenu ul li {
-  display: inline-block;
-  padding: 14px;
-  text-decoration: none;
-} */
-.thumb .tab-titles {
-  width: 100%; /* Set the width of the container */
-  overflow-x: scroll; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent line breaks within the container */
-}
-
-.tab-titles li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block; /* Display the list items in a row */
 }
