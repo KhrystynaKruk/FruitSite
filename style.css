@@ -157,6 +157,23 @@ nav li a:hover {
   color: white;
   margin: 20px 20px 20px 0;
 }
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+
+  30% {
+    transform: scale(1, 0.8) translate(0px, 10px);
+  }
+
+  75% {
+    transform: scale(1, 1.1) translate(0px, -25px);
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
 
 .content .textBox a {
   display: inline-block;
@@ -170,6 +187,8 @@ nav li a:hover {
   text-decoration: none;
   cursor: pointer;
   transition: 0.5s;
+  -webkit-animation: bounce 1s infinite;
+  animation-iteration-count: 3;
 }
 
 .content .textBox a:hover {
@@ -374,18 +393,20 @@ nav .fa-solid {
   }
 
   .thumb {
+    position: absolute;
+    bottom: 1px;
     margin-left: 120px;
-    margin-bottom: 47px;
-    left: 55%;
-    flex-wrap: wrap;
+    /* margin: 50px 50px 0 0; */
+    flex-wrap: nowrap;
   }
   .thumb li {
-    margin: 6px 10px;
+    margin: 6px 8px;
   }
   .sci {
+    display: none;
     top: 89%;
     right: 120px;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .sci li img {
